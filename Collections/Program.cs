@@ -5,3 +5,5 @@ Console.WriteLine("Hello, World!");
 
 Queues.DemonstrateQueues();
 SortedLists.DemonstrateSortedLists();
+BitArray.DemonstrateBitArrays();
+Hashtables.DemonstrateHashtable();
