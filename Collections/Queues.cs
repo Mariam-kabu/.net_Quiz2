@@ -12,10 +12,24 @@ namespace Collections
         {
             Queue<string> Squeue = new Queue<string>();
 
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
             Console.WriteLine();
             Console.WriteLine("Queue");
+            Console.WriteLine();
+
 
             Console.WriteLine("First in first out type of collection");
+            Console.WriteLine();
+            Console.WriteLine("Enqueue: Adds an element to the end of the queue.");
+            Console.WriteLine("Dequeue: Removes and returns the first element from the queue.");
+            Console.WriteLine("Peek: Returns the first element without removing it.");
+            Console.WriteLine("Count: Gets the number of elements contained in the queue.");
+            Console.WriteLine("Clear: Removes all elements from the queue.");
+            Console.WriteLine("Contains: Checks if an element exists in the queue.");
+            Console.WriteLine("Max: Returns the maximum value in the queue.");
+            Console.WriteLine("OrderBy: Sorts the queue.");
+
             Console.WriteLine();
             
             Squeue.Enqueue("String 1");

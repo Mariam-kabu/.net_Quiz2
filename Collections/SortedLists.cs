@@ -11,14 +11,28 @@ namespace Collections
         public static void DemonstrateSortedLists()
         {
             Console.WriteLine();
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+            Console.WriteLine();
 
             Console.WriteLine("Sorted List");
 
             Console.WriteLine();
 
+            Console.WriteLine("Add: Adds a key / value pair to the sorted list.");
+            Console.WriteLine("Access: Accesses values using keys.");
+            Console.WriteLine("ContainsKey: Checks if a key exists in the sorted list.");
+            Console.WriteLine("ContainsValue: Checks if a value exists in the sorted list.");
+            Console.WriteLine("IndexOfKey: Gets the index of a key.");
+            Console.WriteLine("IndexOfValue: Gets the index of a value.");
+            Console.WriteLine("Keys: Gets a collection of keys.");
+            Console.WriteLine("Values: Gets a collection of values.");
+            Console.WriteLine("Remove: Removes a key / value pair by key.");
+            Console.WriteLine("RemoveAt: Removes a key / value pair by index.");
+            Console.WriteLine("Count: Gets the number of key / value pairs in the sorted list.");
+
+
             SortedList<int, string> Slist = new SortedList<int, string>();
 
-            Console.WriteLine("Sorted List");
             Console.WriteLine();
 
             Slist.Add(1, "String 1");
