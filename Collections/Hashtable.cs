@@ -29,18 +29,57 @@ namespace Collections
 
             Console.WriteLine();
 
-            // Checking if a key exists in the Hashtable
-            string searchKey = "Key3";
-            Console.WriteLine($"Does the Hashtable contain key '{searchKey}'? {hashtable.ContainsKey(searchKey)}");
-
-            // Removing an entry from the Hashtable
-            hashtable.Remove("Key2");
+            // Adding, Inserting, Searching, and Deleting Large Items
+            hashtable.Add("Key6", "Large Item 1"); // Add
+            hashtable["Key7"] = "Large Item 2"; // Insert
+            bool containsKey = hashtable.ContainsKey("Key3"); // Search
+            hashtable.Remove("Key4"); // Delete
 
             // Displaying the updated Hashtable
             Console.WriteLine("Updated Hashtable Entries:");
             foreach (DictionaryEntry entry in hashtable)
             {
                 Console.WriteLine($"Key: {entry.Key}, Value: {entry.Value}");
+            }
+
+            Console.WriteLine();
+
+            // Sorting the Hashtable by Key
+            var sortedHashtable = new SortedList(hashtable);
+            
+            // Displaying the Sorted Hashtable
+            Console.WriteLine("Sorted Hashtable Entries:");
+            foreach (DictionaryEntry entry in sortedHashtable)
+            {
+                Console.WriteLine($"Key: {entry.Key}, Value: {entry.Value}");
+            }
+
+            Console.WriteLine();
+
+            // One-dimensional array
+            int[] oneDimensionalArray = { 3, 1, 4, 1, 5, 9 };
+
+            // Displaying the One-dimensional Array
+            Console.WriteLine("One-dimensional Array:");
+            foreach (int num in oneDimensionalArray)
+            {
+                Console.Write($"{num} ");
+            }
+
+            Console.WriteLine();
+
+            // Multi-dimensional array
+            int[,] multiDimensionalArray = { { 1, 2, 3 }, { 4, 5, 6 } };
+
+            // Displaying the Multi-dimensional Array
+            Console.WriteLine("Multi-dimensional Array:");
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"{multiDimensionalArray[i, j]} ");
+                }
+                Console.WriteLine();
             }
         }
     }
