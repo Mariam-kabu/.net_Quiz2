@@ -7,6 +7,13 @@ namespace Collections
     {
         public static void DemonstrateOneDimArray()
         {
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
+            Console.WriteLine();
+            Console.WriteLine("One Dimensional Array");
+            Console.WriteLine();
+
+            
             // Add elements to collection (array)
             int[] myArray = new int[5];
             myArray[0] = 10;

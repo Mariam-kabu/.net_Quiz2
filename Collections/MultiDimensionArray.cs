@@ -7,6 +7,15 @@ namespace Collections
     {
         public static void DemonstrateMultiDimArray()
         {
+
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
+            Console.WriteLine();
+            Console.WriteLine("Multi Dimensional Array");
+            Console.WriteLine();
+
+            
+
             // Create a 2D array (3x3 matrix) of integers
             int[,] myMatrix = new int[,]
             {
@@ -50,7 +59,7 @@ namespace Collections
             // Note: Sorting a 2D array requires converting it to a 1D array first
             int[] flattenedArray = myMatrix.Cast<int>().ToArray();
             Array.Sort(flattenedArray);
-            Array.Copy(flattenedArray, myMatrix, flattenedArray.Length);
+            //Array.Copy(flattenedArray, myMatrix, flattenedArray.Length);
 
             // Display the matrix after sorting
             Console.WriteLine("Matrix after sorting:");

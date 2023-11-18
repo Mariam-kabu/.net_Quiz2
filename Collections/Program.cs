@@ -48,6 +48,19 @@ while (!exitRequested)
             Console.WriteLine("Option 7 selected. Performing action...");
             PersonQueue.DemonstrateNonGenericQueue();
             break;
+        case "8":
+            Console.WriteLine("Option 8 selected. Performing action...");
+            OneDimArray.DemonstrateOneDimArray();
+            break;
+        case "9":
+            Console.WriteLine("Option 9 selected. Performing action...");
+            MultiDimArray.DemonstrateMultiDimArray();
+            break;
+        case "10":
+            Console.WriteLine("Option 10 selected. Performing action...");
+            ArrayLists.DemonstrateArrayList();
+            break;
+
 
         case "exit":
             Console.WriteLine("Exiting the program. Goodbye!");
@@ -73,6 +86,9 @@ static void DisplayMenu()
     Console.WriteLine("5. Dictionary");
     Console.WriteLine("6. Stack");
     Console.WriteLine("7. Non-Generic Queue");
+    Console.WriteLine("8. Array");
+    Console.WriteLine("9. MultiDimensional Array");
+    Console.WriteLine("10. ArrayList");
     Console.WriteLine("Type 'exit' to exit the program.");
     Console.Write("Enter your choice: ");
 }

@@ -7,8 +7,11 @@ namespace Collections
     {
         public static void DemonstrateHashtable()
         {
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
             Console.WriteLine();
             Console.WriteLine("Hashtable");
+            Console.WriteLine();
 
             // Creating a Hashtable
             Hashtable hashtable = new Hashtable();

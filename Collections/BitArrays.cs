@@ -7,8 +7,11 @@ namespace Collections
     {
         public static void DemonstrateBitArrays()
         {
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
             Console.WriteLine();
             Console.WriteLine("BitArray");
+            Console.WriteLine();
 
             // Creating a BitArray
             BitArray bitArray = new BitArray(8);

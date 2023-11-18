@@ -3,15 +3,23 @@ using System.Collections;
 
 namespace Collections
 {
-    public class ArrayList
+    public class ArrayLists
     {
         public static void DemonstrateArrayList()
         {
+            Console.WriteLine("+----------------------------------------------------------------------------------------------+");
+
+            Console.WriteLine();
+            Console.WriteLine("ArrayList");
+            Console.WriteLine();
+
+
             // Add elements to collection (ArrayList)
             ArrayList myArrayList = new ArrayList();
             myArrayList.Add(10);
             myArrayList.Add(20);
             myArrayList.Add(30);
+            myArrayList.Add(40);
 
             // Display the ArrayList after adding elements
             Console.WriteLine("ArrayList after adding elements:");
